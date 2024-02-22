@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
+
+    <title>Portfólio</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <img src="imagens/logo.png" alt="logo">
+                <input type="checkbox" class="menu-btn hide" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+                <ul class="header-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobremim">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <main>
+        <section id="home">
+            <article class="home__article">
+                <h1 class="">Wendel Santos!</h1>
+                <h2 class="">Desenvolvedor Web.</h2>
+
+                <nav class="contatos">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/wendel-santos-866904227/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/wendelpedrete/wendelpedrete" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                </nav>
+            </article>
+        </section>
+
+        <div class="container">
+            <section class="sobremim" id="sobremim">
+                <article class="sobremim__article" class="animate-on-scroll">
+                    <h3 class="animate-on-scroll">Sobre mim</h3>
+                    <p class="animate-on-scroll">Olá! Me chamo Wendel, nasci em janeiro de 1996. Desde sempre, sou movido pela paixão pela tecnologia. Durante minha jornada acadêmica, explorando o vasto mundo do desenvolvimento mobile, deparei-me com diversas tecnologias e, ao imergir no universo do desenvolvimento web, encontrei minha verdadeira paixão.
+
+                    A cada linha de código, enxergo a oportunidade de criar experiências impactantes e funcionais. Acredito que a web é uma plataforma incrível para expressar ideias e construir soluções que transcendem as barreiras do digital.
+                        
+                    Com uma abordagem focada no aprendizado constante e na busca pela inovação, estou sempre explorando novas tecnologias e metodologias. Acredito que a colaboração e o compartilhamento de conhecimento são fundamentais para o crescimento pessoal e profissional.
+                    </p>
+                    <p class="animate-on-scroll">Vamos criar algo incrível juntos!</p>
+                    <a href="https://drive.google.com/uc?export=download&id=1uJSfXq6cnzsNyeNhia-5dcwmTkFoES4y" download="Curriculo_WendelSantos.pdf" class="curriculo animate-on-scroll">Curriculo Download</a>
+                </article>
+            
+                <article class="article__habilidades">
+                    <h3 class="animate-on-scroll">Habilidades</h3>
+                    <ul class="animate-on-scroll">
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Javascript</li>
+                        <li>React</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+          <section id="projetos" class="animate-on-scroll">
+            <h3 class="projetos__title animate-on-scroll">Projetos</h3>
+            <div class="buttons__carrosel animate-on-scroll">
+              <button class="carrosel-btn prev-btn" id="prev"><i class="fa-solid fa-angles-left"></i></button>
+              <button class="carrosel-btn next-btn" id="next"><i class="fa-solid fa-angles-right"></i></button>
+            </div>
+            
+              <article id="carousel" class="animate-on-scroll">
+                <div class="item"><p>Em breve</p></div>
+                <div class="item"><p>Em breve</p></div>
+                <div class="item"><p>Em breve</p></div>
+                <div class="item"><p>Em breve</p></div>
+                <div class="item"><p>Em breve</p></div>
+              </article>
+          </section>
+
+          <section id="contato">
+            <h3 class="animate-on-scroll">Contato</h3>
+
+            <div class="contato__form">
+                <form class="animate-on-scroll" name="formulario" action="formulario.php" method="post" onsubmit="return validarFormulario()">
+                    <label>Nome</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" autocomplete="off">
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Digite seu email" autocomplete="off">
+                    <label>Mensagem</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem" ></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+          </section>
+        
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Wendel Santos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="carrosel.js"></script>
+</body>
+</html>
